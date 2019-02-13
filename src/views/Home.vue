@@ -1,21 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home container text-center">
+    <img src="../assets/flower2.jpg" class="img-responsive" alt="Responsive image">
+       <ChatRoom/> 
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ChatRoom from '@/components/ChatRoom.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    ChatRoom
   }
 }
 </script>
-<style>
-@import "https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+<style  scoped>
+@import "https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css";
+.img-responsive{
+  width: 100%
+}
 </style>

@@ -9,7 +9,9 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'semi': 'error',
+    'vue/html-no-self-closing': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'
