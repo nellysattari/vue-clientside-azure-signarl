@@ -84,7 +84,8 @@ export default {
       }
     } while (!username);
     this.hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:5000/chat", {
+      .withUrl('https://nellysignalr20190128105854.azurewebsites.net/chat',{
+      // .withUrl("http://localhost:5000/chat", {
         withCredentials: true
       })
       .build();
